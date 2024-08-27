@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(165, 148, 148);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px; /* Ajustei para um leve arredondamento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    box-sizing: border-box; /* Garantir que o padding seja considerado no tamanho total */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento consistente entre inputs */
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Arredondamento dos inputs */
+    box-sizing: border-box; /* Para que o padding seja incluído no tamanho total */
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que o conteúdo quebre para a próxima linha se necessário */
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+  
+  li span {
+    margin-right: 10px;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço disponível */
+  }
+  
+  li button {
+    background-color: rgb(226, 38, 38);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  li button:hover {
+    background-color: rgb(196, 39, 39);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li span {
+      margin-right: 0;
+    }
+  
+    li button {
+      align-self: flex-end;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    li span {
+      margin-right: 0;
+    }
+  
+    li button {
+      align-self: flex-end;
+    }
+  }
+  
+      
+
